@@ -55,7 +55,31 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return
+    return (f"Welcome to Corey's Climate API - Find out Climate Information from Hawaii, USA<br/>"
+            f"______________________________________________________________________________<br/>"
+            f"______________________________________________________________________________<br/>"
+            f"BASIC INFORMATION<br/>"
+            f"______________________________________________________________________________<br/>"
+            f"Would you like to learn about precipitation data?<br/>"
+            f"Use the following URL to access - 'api/v1.0/precipitation' <br/>"
+            f"______________________________________________________________________________<br/>"
+            f"Would you like to learn the names of the weather stations in Hawai?<br/>"
+            f"Use the following URL to access - '/api/v1.0/stations' <br/>"
+            f"______________________________________________________________________________<br/>"
+            f"Would you like to learn temperature data at the most active station in Hawaii?<br/>"
+            f"Use the following URL to access - '/api/v1.0/tobs' <br/>"
+            f"______________________________________________________________________________<br/>"
+            f"______________________________________________________________________________<br/>"
+            f"DATE SPECIFIC INFORMATION<br/>"
+            f"______________________________________________________________________________<br/>"
+            f"Would you like to learn temperature information from a specific date and on? <br/>"
+            f"Use the following URL to access - '/api/v1.0/2015-08-19' - format needed [YYYY-MM-DD]<br/>"
+            f"______________________________________________________________________________<br/>"
+            f"Would you like to learn temperature information between a specific start and end date?<br/>"
+            f"Use the following URL to access - '/api/v1.0/2015-08-19/2016-08-19' - format needed [YYYY-MM-DD]<br/>"
+            f"______________________________________________________________________________<br/>"
+            f"______________________________________________________________________________<br/>"
+            f"DATA IS COLLECTED FROM HAWAII STARTING ON 2010-01-01 ENDING ON 2017-08-23<BR/>")
 
 @app.route("/api/v1.0/precipitation")
 def precip():
